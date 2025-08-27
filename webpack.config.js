@@ -4,15 +4,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/template.js",
+  entry: "./src/index.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
-  devTool: "eval-source-map",
+  devtool: "eval-source-map",
   devServer: {
-    watchFile: ["./src/index.html"],
+    watchFiles: ["./src/index.html"],
   },
   plugins: [
     new HtmlWebpackPlugin({
