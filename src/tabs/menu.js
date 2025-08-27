@@ -14,14 +14,15 @@ export function createMenu() {
     list.classList.add("menu-list");
     const dishes = ["Spaghetti Carbonara", "Margherita Pizza", "Tiramisu"];
     dishes.forEach(dish => {
-        const listItem = document.createElement("div");
-        listItem.classList.add("menu-item");
+        const itemName = document.createElement("div");
+        itemName.classList.add("menu-item");
+        itemName.textContent = dish;
         const button = document.createElement("button");
         button.classList.add("menu-button");
-        listItem.textContent = dish;
-        list.appendChild(listItem);
         button.textContent = "Order Now";
-        list.appendChild(button);
+        itemName.appendChild(button);
+
+        menu.appendChild(itemName);
 
         button.addEventListener("click", () => {
             alert(`${dish} ordered!`);

@@ -1,0 +1,10 @@
+.nav {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
