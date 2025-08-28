@@ -1,7 +1,7 @@
+import "./style.css";
 import { createReviews } from "./tabs/review.js";
 import { createMenu } from "./tabs/menu.js";
 import { createHome } from "./tabs/home.js";
-import "./styling/style.css";
 
 const content = document.getElementById("content");
 const homeBTN = document.getElementById("Home");

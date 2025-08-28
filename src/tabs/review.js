@@ -50,6 +50,7 @@ export function createReviews() {
     messageInput.classList.add("reviews-input");
     const submitButton = document.createElement("button");
     submitButton.textContent = "Send";
+    submitButton.classList.add("send");
     form.appendChild(fnameLabel);
     form.appendChild(fnameInput);
     form.appendChild(lnameLabel);
